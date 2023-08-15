@@ -170,6 +170,11 @@ header {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .hero {
+    min-height: 60vh;
+  }
+}
 .about {
   width: 100%;
   background-color: #0D121E;
