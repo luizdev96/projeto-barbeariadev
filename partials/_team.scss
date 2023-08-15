@@ -1,0 +1,101 @@
+.team{
+    background-color: $blue;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.title-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+    h1{
+        text-transform: uppercase;
+        color: rgba($white,0.8);
+        letter-spacing: 10px;
+        font-size: 40px;
+        font-weight: 700;
+        
+    }
+}
+
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.teams-item{  
+
+    img{
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        transition: transform 0.50s ease;
+    }
+
+}
+
+.teams-item img:hover{
+    transform: scale(1.05);
+}
+
+.teams-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: $white;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    li{
+        display: inline-flex;
+        margin-right: 10px;
+    }
+
+    li i{
+        font-size: 22px;
+        color: $white;
+        
+    }
+}
+
+.teams-item li i:hover{
+    color: $orange;
+    animation: scaleicon 0.8s alternate infinite;
+    cursor: pointer;
+}
+
+@keyframes scaleicon {
+    
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.09);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .teams{
+        flex-direction: column;
+    }
+
+    .title-team h1{font-size: 30px;}
+}
+

@@ -1,0 +1,48 @@
+// ABOUT----------------------------------
+.about{
+    width: 100%;
+    background-color: $blue;
+    overflow: hidden;
+    color: $white;
+
+    
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 570px;
+    }
+
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 21px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 16px;
+        text-align: justify;
+    }
+
+    address{
+        font-style: normal;
+    }
+}
+
+.about-container div{
+    flex: 1;
+}
+
+@media screen and (max-width: 768px){
+    .about-container{
+        flex-direction: column ;
+    }
+}

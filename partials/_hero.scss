@@ -1,0 +1,101 @@
+
+.hero{
+    background-image:
+    linear-gradient(to bottom, rgba(6, 18, 30, 0.4), #0D121E),
+    url('../assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 95vh;
+    width: 100%;
+}
+
+.description-hero{
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+
+    h1{
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 150%;
+        max-width: 70%;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.55);
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.btn-contact{
+    padding: 10px 55px;
+    color: $blue1;
+    background-color: $orange;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.btn-contact:hover{
+    background-color: $gray;
+    transition: background-color 1.5s ease;
+    color: $blue1;
+    animation: scaleButtom 0.8s alternate infinite;
+}
+
+@keyframes scaleButtom {
+    
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .hero{
+        min-height: 60vh;
+    }
+
+    .description-hero{
+
+        h1{
+            font-size: 30px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .description-hero{
+        
+
+        h1{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }   
+    
+}

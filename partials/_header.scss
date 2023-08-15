@@ -1,0 +1,84 @@
+header{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba($color: $blue, $alpha: 1);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+}
+
+.content-left{
+    display: flex;
+}
+
+.logo img{
+    max-width: 40px;
+}
+
+.navbar{
+    margin-left: 15px;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+.navbar a{
+    color: $white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover{
+    transition: color 1.2s;
+    color: $orange;
+}
+
+.btnAgendar{
+    padding: 10px 30px;
+    border: 1px solid $white;
+    border-radius: 5px;
+}
+
+.btnAgendar a{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: $white;
+    display: block;
+}
+
+.btnAgendar:hover{
+    background-color: $orange;
+    transition: background-color 1s;
+    border: 0;
+}
+
+.btnAgendar a:hover{
+    color: #000;
+}
+
+.navbar-moblie{
+    display: none;
+}
+
+.navbar-moblie i{
+    color: $white;
+    font-size: 35px;
+    margin-top: 13px;
+    margin-right: 5px;
+}
+
+@media screen and ( max-width: 768px ) {
+
+    header{padding: 5px;}
+
+    .btnAgendar{display: none;}
+    .navbar{display:none;}
+    .navbar-moblie{display: block;}
+    .logo img{max-width: 45px; margin: 5px;}
+}
+

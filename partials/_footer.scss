@@ -1,0 +1,138 @@
+.footer{
+    width: 100%;
+    background-color: $white;
+}
+
+.unitis{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.unitis-item{
+    flex: 1;
+    max-width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: $white;
+    opacity: 0.8;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.6);
+}
+
+.unitis-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.unitis-info h1{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.55);
+}
+
+.unitis-info h5{
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.55);
+}
+
+.unitis-item:hover{
+    opacity: 1;
+    transition: opacity, border-radius 2s ease;
+    border-radius: 0;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.networks-footer{
+    margin-bottom: 20px;
+}
+
+.networks-footer li{
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+.networks-footer li i{
+    font-size: 22px;
+    color: $blue;
+}
+
+.logo-footer{
+    width:120px;
+}
+
+.networks-footer li i:hover{
+    color: $blue1;
+    animation: scaleicon 0.8s alternate infinite;
+    cursor: pointer;
+}
+
+.copyright{
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    color: $blue1;
+    text-align: center;
+}
+
+.copyright h1{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.copyright h6{
+    font-size: 11px;
+    font-weight: 300;
+}
+
+@keyframes scaleicon {
+    
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .unitis{
+        flex-direction: column;
+    }
+
+    .unitis-item{
+        flex: 1;
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .copyright{
+        padding-bottom: 20px;
+    }
+}
+
+
+
